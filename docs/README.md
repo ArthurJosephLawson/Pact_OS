@@ -27,6 +27,7 @@ docs/
 ├── GITHUB_METADATA.md                  # 🌐 Canonical Repository Topics, Metadata & Discoverability
 ├── MAINTAINER-HEALTH.md                # 📊 Maintainer Operational Health Dashboard & Governance
 ├── MAINTAINER-WORKFLOW.md              # Contributor Triage, PR Review & Claim Assignment Runbook
+├── CODE_REVIEW_POLICY.md               # ✅ Code Review Criteria, Maintainer SLA & Merge Requirements
 ├── PACT_MASTER_DOCUMENTATION.md        # 🌟 Comprehensive Central Product & Technical Specification
 ├── PHASE-16-PUBLICATION-READINESS.md   # 🚀 Phase 16 Publication Readiness & Launch Certification Report
 ├── PHASE-17-PUBLIC-LAUNCH-CERTIFICATION.md # 📜 Phase 17 Final Public Launch Certification
@@ -36,9 +37,11 @@ docs/
 ├── DATA_MODEL.md                       # Relational Schemas, Constraints, Indexes & RLS
 ├── INTEGRATIONS.md                     # External Proof Connectors (Google Calendar, GitHub, LeetCode, Codeforces)
 ├── SECURITY.md                         # Security Matrix, Zero-Trust Boundaries & Sanitization
+├── SUPABASE_SECURITY.md                # 🔐 Service Role Key Usage & RLS Policy Best Practices
 ├── THREAT_MODEL.md                     # 🛡️ Threat Actor Taxonomy, Attack Surfaces & Defense Mitigations
 ├── DEVELOPMENT.md                      # Local Setup, Development Workflow, Scripts & DB Migrations
 ├── GIT_WORKFLOW.md                     # Branching, Conventional Commits & Pre-Commit Rules
+├── LOCAL_FIRST_STORAGE.md              # 💾 Local-First Persistence, Offline Queue & Sync Architecture
 ├── RELEASE_MANAGEMENT.md               # 📦 Release Engineering, Semantic Versioning & Changelog Standards
 ├── ROADMAP.md                          # Current Verified Status & Future Planned Milestones
 ├── DESIGN_SYSTEM.md                    # Luxury Obsidian Canvas, 3D Celestial Hero & PACT Gold Tokens
@@ -68,9 +71,11 @@ docs/
 - [**Data Model & Relational Schemas**](./DATA_MODEL.md): Postgres tables, foreign keys, lifecycle constraints, and RLS policies.
 - [**Integrations & External Proofs**](./INTEGRATIONS.md): Bi-directional Google Calendar sync, GitHub, LeetCode, and Codeforces connectors.
 - [**Security & Zero-Trust Boundaries**](./SECURITY.md): 28-point security checklist, zero-trust server boundaries, and confidential consequence masking.
+- [**Supabase Security & RLS**](./SUPABASE_SECURITY.md): Service role vs publishable key, `auth.uid()` RLS policies, and timing-safe cron token protection.
 - [**Threat Model Specification**](./THREAT_MODEL.md): Threat actor taxonomy, attack surface analysis, and defense-in-depth security mitigations.
 - [**Architecture Decision Records (ADRs)**](./DECISIONS.md): Durable technical choices, trade-offs, and design rationale.
 - [**Timezone Guide**](./TIMEZONE_GUIDE.md): UTC ISO 8601 storage, IANA validation, local display, and DST edge cases.
+- [**Local-First Data Persistence**](./LOCAL_FIRST_STORAGE.md): Storage tiers, the offline mutation queue, sync engine, delta replication, conflict resolution, and the evidence cache.
 
 ### 3. Developer Guide, Community & Operations
 - [**Beginner's Contribution Guide**](./CONTRIBUTING-BEGINNERS.md): Zero-to-PR step-by-step tutorial for first-time open-source contributors.
@@ -84,6 +89,7 @@ docs/
 - [**Contributing Guide**](../CONTRIBUTING.md): Root guide for opening issues, branching, coding standards, and pull requests.
 - [**Code of Conduct**](../CODE_OF_CONDUCT.md): Community participation standards and enforcement guidelines.
 - [**Maintainer Operating Workflow**](./MAINTAINER-WORKFLOW.md): Contributor issue triage, PR review checklist, claim management, and release runbook.
+- [**Code Review Policy & Maintainer SLA**](./CODE_REVIEW_POLICY.md): First-response targets, review criteria, and merge requirements.
 - [**Maintainer Operational Health**](./MAINTAINER-HEALTH.md): Maintainer health metrics, operational governance, triage SLA, and release invariants.
 - [**Phase 16 Publication Readiness**](./PHASE-16-PUBLICATION-READINESS.md): Phase 16 publication readiness report, security audits, and deployment verification.
 - [**Phase 17 Launch Certification**](./PHASE-17-PUBLIC-LAUNCH-CERTIFICATION.md): Phase 17 final launch certification, quality gate results, and launch readiness.

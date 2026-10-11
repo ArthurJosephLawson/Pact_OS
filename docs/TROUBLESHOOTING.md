@@ -17,7 +17,8 @@ This guide provides practical solutions for common errors and setup roadblocks w
 9. [Production Build Failures](#9-production-build-failures)
 10. [Windows PowerShell & OS Tips](#10-windows-powershell--os-tips)
 11. [Database & Supabase Issues](#11-database--supabase-issues)
-12. [How to Request Support](#12-how-to-request-support)
+12. [Local Storage & Quota Issues](#12-local-storage--quota-issues)
+13. [How to Request Support](#13-how-to-request-support)
 
 ---
 
@@ -383,7 +384,68 @@ A Row Level Security (RLS) policy reads its own table, causing PostgreSQL to eva
 
 ---
 
-## 12. How to Request Support
+## 12. Local Storage & Quota Issues
+
+PACT stores offline state in the browser through a small adapter layer
+(`src/lib/offline/storage.ts`, `local-cache.ts`, `attachment-cache.ts`). When the
+browser storage quota is full, a write throws a `QuotaExceededError`
+(`DOMException` name `QuotaExceededError`). The adapters probe storage at load
+and silently fall back to an in-memory store on failure, so in a private window
+or a full-quota profile offline data will not survive a reload.
+
+The three client storage keys are:
+
+| Key | Holds |
+| :--- | :--- |
+| `pact_offline_sync_queue_v1` | Pending offline mutations |
+| `pact_local_entity_cache_v2` | Cached server entities (schema v2) |
+| `pact_staged_proof_attachments_v1` | Staged proof attachments (5 MB/file, 25 MB total) |
+
+### Resolving Local Storage Quota Exceeded Errors
+
+1. **Confirm the cause.** Open DevTools → **Application → Storage** and check the
+   usage against the quota. The console shows errors such as
+   `Failed to execute 'setItem' on 'Storage': Setting the value of 'pact_staged_proof_attachments_v1' exceeded the quota.`
+
+2. **Preserve pending work first.** Before clearing anything, copy the offline
+   queue so unsynced mutations are not lost:
+
+   ```js
+   // Run in the DevTools console.
+   copy(localStorage.getItem('pact_offline_sync_queue_v1'));
+   ```
+
+   Paste the result somewhere safe, or trigger a sync while online so the queue
+   drains before you clear caches.
+
+3. **Purge staged proof attachments.** Staged attachments are re-capturable, so
+   they are the safest thing to remove:
+
+   ```js
+   localStorage.removeItem('pact_staged_proof_attachments_v1');
+   ```
+
+4. **Purge the entity cache if needed.** The cache is rebuilt from the server on
+   the next load:
+
+   ```js
+   localStorage.removeItem('pact_local_entity_cache_v2');
+   ```
+
+5. **Do not clear the queue while items are pending.** Deleting
+   `pact_offline_sync_queue_v1` discards unsynced mutations permanently. Drain it
+   while online, or back it up in step 2, before removing the key.
+
+6. **Then reload.** Because the adapter may have switched to the in-memory
+   fallback, freeing space alone does not restore persistence; reload the page so
+   the adapter re-probes storage and re-selects `localStorage`.
+
+If quota pressure recurs, reduce the size or number of staged proof attachments
+before uploading (each file is capped at 5 MB and the staged total at 25 MB).
+
+---
+
+## 13. How to Request Support
 
 If your problem is not covered in this guide, our community is here to help!
 
