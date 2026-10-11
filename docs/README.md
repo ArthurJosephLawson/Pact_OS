@@ -39,6 +39,7 @@ docs/
 ├── THREAT_MODEL.md                     # 🛡️ Threat Actor Taxonomy, Attack Surfaces & Defense Mitigations
 ├── DEVELOPMENT.md                      # Local Setup, Development Workflow, Scripts & DB Migrations
 ├── GIT_WORKFLOW.md                     # Branching, Conventional Commits & Pre-Commit Rules
+├── LOCAL_FIRST_STORAGE.md              # 💾 Local-First Persistence, Offline Queue & Sync Architecture
 ├── RELEASE_MANAGEMENT.md               # 📦 Release Engineering, Semantic Versioning & Changelog Standards
 ├── ROADMAP.md                          # Current Verified Status & Future Planned Milestones
 ├── DESIGN_SYSTEM.md                    # Luxury Obsidian Canvas, 3D Celestial Hero & PACT Gold Tokens
@@ -69,6 +70,7 @@ docs/
 - [**Security & Zero-Trust Boundaries**](./SECURITY.md): 28-point security checklist, zero-trust server boundaries, and confidential consequence masking.
 - [**Threat Model Specification**](./THREAT_MODEL.md): Threat actor taxonomy, attack surface analysis, and defense-in-depth security mitigations.
 - [**Architecture Decision Records (ADRs)**](./DECISIONS.md): Durable technical choices, trade-offs, and design rationale.
+- [**Local-First Data Persistence**](./LOCAL_FIRST_STORAGE.md): Storage tiers, the offline mutation queue, sync engine, delta replication, conflict resolution, and the evidence cache.
 
 ### 3. Developer Guide, Community & Operations
 - [**Beginner's Contribution Guide**](./CONTRIBUTING-BEGINNERS.md): Zero-to-PR step-by-step tutorial for first-time open-source contributors.
