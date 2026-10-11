@@ -12,6 +12,7 @@ Welcome to the canonical documentation for **PACT** — a Personal Operating Sys
 ```
 docs/
 ├── CI_PIPELINE.md                      # ⚙️ GitHub Actions CI Pipeline & Automated Quality Gates
+├── CI_WORKFLOW.md                      # ✅ CI Workflow Gates, Triggers & Local Reproduction Steps
 ├── CONTRIBUTING-BEGINNERS.md           # 🌱 Beginner Contributor Zero-to-PR Walkthrough
 ├── DEPENDENCY_SECURITY.md              # 🛡️ Dependency Health, Security Auditing & Supply-Chain Policy
 ├── GITHUB_AUTOMATION.md                # 🤖 GitHub Automation, Triage Bot & Policy Engine Architecture
@@ -77,6 +78,7 @@ docs/
 - [**Community Discussions Guide**](./GITHUB_DISCUSSIONS.md): GitHub Discussions categories, ideas lifecycle, and contributor journey.
 - [**GitHub Label Taxonomy**](./GITHUB_LABELS.md): Official issue classification system, difficulty levels, and label composition guide.
 - [**GitHub Automation & Bot Architecture**](./GITHUB_AUTOMATION.md): Event-driven triage bot, security model, and lifecycle policies.
+- [**CI Workflow Gates**](./CI_WORKFLOW.md): The GitHub Actions workflows, required checks, and how to reproduce them locally.
 - [**GitHub Metadata & Topics**](./GITHUB_METADATA.md): Canonical repository description, topics taxonomy, social preview, and discoverability rules.
 - [**Troubleshooting Guide**](./TROUBLESHOOTING.md): Practical diagnostics for Node.js, environment variables, build, port, and Git issues.
 - [**Contributing Guide**](../CONTRIBUTING.md): Root guide for opening issues, branching, coding standards, and pull requests.
