@@ -43,6 +43,7 @@ docs/
 ├── ROADMAP.md                          # Current Verified Status & Future Planned Milestones
 ├── DESIGN_SYSTEM.md                    # Luxury Obsidian Canvas, 3D Celestial Hero & PACT Gold Tokens
 ├── TESTING.md                          # 56-Suite Automated Test Matrix & Verification Runbook
+├── TIMEZONE_GUIDE.md                   # 🌍 Multi-Timezone Setup, UTC Storage & DST Handling
 ├── TROUBLESHOOTING.md                  # 🔧 Practical Diagnostic Guide for Setup, Build & Git Roadblocks
 ├── USER_FLOWS.md                       # Core User Workflows & State Lifecycle Transitions
 ├── DECISIONS.md                        # Architecture Decision Records (ADRs)
@@ -69,6 +70,7 @@ docs/
 - [**Security & Zero-Trust Boundaries**](./SECURITY.md): 28-point security checklist, zero-trust server boundaries, and confidential consequence masking.
 - [**Threat Model Specification**](./THREAT_MODEL.md): Threat actor taxonomy, attack surface analysis, and defense-in-depth security mitigations.
 - [**Architecture Decision Records (ADRs)**](./DECISIONS.md): Durable technical choices, trade-offs, and design rationale.
+- [**Timezone Guide**](./TIMEZONE_GUIDE.md): UTC ISO 8601 storage, IANA validation, local display, and DST edge cases.
 
 ### 3. Developer Guide, Community & Operations
 - [**Beginner's Contribution Guide**](./CONTRIBUTING-BEGINNERS.md): Zero-to-PR step-by-step tutorial for first-time open-source contributors.
