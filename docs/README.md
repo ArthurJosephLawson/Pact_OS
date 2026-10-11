@@ -36,6 +36,7 @@ docs/
 ├── DATA_MODEL.md                       # Relational Schemas, Constraints, Indexes & RLS
 ├── INTEGRATIONS.md                     # External Proof Connectors (Google Calendar, GitHub, LeetCode, Codeforces)
 ├── SECURITY.md                         # Security Matrix, Zero-Trust Boundaries & Sanitization
+├── SUPABASE_SECURITY.md                # 🔐 Service Role Key Usage & RLS Policy Best Practices
 ├── THREAT_MODEL.md                     # 🛡️ Threat Actor Taxonomy, Attack Surfaces & Defense Mitigations
 ├── DEVELOPMENT.md                      # Local Setup, Development Workflow, Scripts & DB Migrations
 ├── GIT_WORKFLOW.md                     # Branching, Conventional Commits & Pre-Commit Rules
@@ -67,6 +68,7 @@ docs/
 - [**Data Model & Relational Schemas**](./DATA_MODEL.md): Postgres tables, foreign keys, lifecycle constraints, and RLS policies.
 - [**Integrations & External Proofs**](./INTEGRATIONS.md): Bi-directional Google Calendar sync, GitHub, LeetCode, and Codeforces connectors.
 - [**Security & Zero-Trust Boundaries**](./SECURITY.md): 28-point security checklist, zero-trust server boundaries, and confidential consequence masking.
+- [**Supabase Security & RLS**](./SUPABASE_SECURITY.md): Service role vs publishable key, `auth.uid()` RLS policies, and timing-safe cron token protection.
 - [**Threat Model Specification**](./THREAT_MODEL.md): Threat actor taxonomy, attack surface analysis, and defense-in-depth security mitigations.
 - [**Architecture Decision Records (ADRs)**](./DECISIONS.md): Durable technical choices, trade-offs, and design rationale.
 
