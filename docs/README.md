@@ -27,6 +27,7 @@ docs/
 ├── GITHUB_METADATA.md                  # 🌐 Canonical Repository Topics, Metadata & Discoverability
 ├── MAINTAINER-HEALTH.md                # 📊 Maintainer Operational Health Dashboard & Governance
 ├── MAINTAINER-WORKFLOW.md              # Contributor Triage, PR Review & Claim Assignment Runbook
+├── CODE_REVIEW_POLICY.md               # ✅ Code Review Criteria, Maintainer SLA & Merge Requirements
 ├── PACT_MASTER_DOCUMENTATION.md        # 🌟 Comprehensive Central Product & Technical Specification
 ├── PHASE-16-PUBLICATION-READINESS.md   # 🚀 Phase 16 Publication Readiness & Launch Certification Report
 ├── PHASE-17-PUBLIC-LAUNCH-CERTIFICATION.md # 📜 Phase 17 Final Public Launch Certification
@@ -82,6 +83,7 @@ docs/
 - [**Contributing Guide**](../CONTRIBUTING.md): Root guide for opening issues, branching, coding standards, and pull requests.
 - [**Code of Conduct**](../CODE_OF_CONDUCT.md): Community participation standards and enforcement guidelines.
 - [**Maintainer Operating Workflow**](./MAINTAINER-WORKFLOW.md): Contributor issue triage, PR review checklist, claim management, and release runbook.
+- [**Code Review Policy & Maintainer SLA**](./CODE_REVIEW_POLICY.md): First-response targets, review criteria, and merge requirements.
 - [**Maintainer Operational Health**](./MAINTAINER-HEALTH.md): Maintainer health metrics, operational governance, triage SLA, and release invariants.
 - [**Phase 16 Publication Readiness**](./PHASE-16-PUBLICATION-READINESS.md): Phase 16 publication readiness report, security audits, and deployment verification.
 - [**Phase 17 Launch Certification**](./PHASE-17-PUBLIC-LAUNCH-CERTIFICATION.md): Phase 17 final launch certification, quality gate results, and launch readiness.
