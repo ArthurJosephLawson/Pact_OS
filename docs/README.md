@@ -13,6 +13,7 @@ Welcome to the canonical documentation for **PACT** — a Personal Operating Sys
 docs/
 ├── CI_PIPELINE.md                      # ⚙️ GitHub Actions CI Pipeline & Automated Quality Gates
 ├── CONTRIBUTING-BEGINNERS.md           # 🌱 Beginner Contributor Zero-to-PR Walkthrough
+├── CONTRIBUTING-WINDOWS.md             # 🪟 Windows Setup Guide (WSL2, Git CRLF, PowerShell)
 ├── DEPENDENCY_SECURITY.md              # 🛡️ Dependency Health, Security Auditing & Supply-Chain Policy
 ├── GITHUB_AUTOMATION.md                # 🤖 GitHub Automation, Triage Bot & Policy Engine Architecture
 ├── GITHUB_BEGINNER_ISSUES.md           # 🎯 Curated Beginner Issue Factory & Master Catalog Index
@@ -72,6 +73,7 @@ docs/
 
 ### 3. Developer Guide, Community & Operations
 - [**Beginner's Contribution Guide**](./CONTRIBUTING-BEGINNERS.md): Zero-to-PR step-by-step tutorial for first-time open-source contributors.
+- [**Contributing on Windows**](./CONTRIBUTING-WINDOWS.md): Setup tips for WSL2, Git line endings (`CRLF` vs `LF`), and PowerShell execution policy.
 - [**Curated Beginner Issues**](./GITHUB_BEGINNER_ISSUES.md): Master factory of 44 fully specified Good First Issues across all PACT modules ([#107–#113](./GITHUB_BEGINNER_ISSUES_107_113.md), [#130–#138](./GITHUB_BEGINNER_ISSUES_130_138.md)).
 - [**Issue Factory Architecture**](./GITHUB_ISSUE_FACTORY.md): 15-part issue specification, SEO discovery rules, and domain search vocabulary.
 - [**Community Discussions Guide**](./GITHUB_DISCUSSIONS.md): GitHub Discussions categories, ideas lifecycle, and contributor journey.
